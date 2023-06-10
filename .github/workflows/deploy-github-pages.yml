@@ -7,7 +7,7 @@ on:
     branches: ['main']
     paths:
       - '!.github/**'
-      - '.github/workflows/deploy-example.yml'
+      - '.github/workflows/deploy-github-pages.yml'
       - '*'
       - '!*.md'
 
@@ -58,10 +58,10 @@ jobs:
           NG_USE_SERVICE_WORKER: 'true'
           NG_USE_Q_AND_AS: 'true'
           NG_USE_Q_AND_A_SEARCH: 'true'
-          TXT_APP_NAME: ''
-          TXT_APP_LOGO_URL: ''
-          TXT_MAIN_PAGE_HEADER: ''
-          TXT_MAIN_PAGE_INTRO: ''
+          TXT_APP_NAME: 'test-2-app-name'
+          TXT_APP_LOGO_URL: 'https://redcross.org.ua/wp-content/uploads/2021/05/red-cross-logo-300x300-1.png'
+          TXT_MAIN_PAGE_HEADER: 'test-2-header'
+          TXT_MAIN_PAGE_INTRO: 'test-2-intro'
           TXT_ERROR_HEADER: 'Data Unavailable'
           TXT_ERROR_MESSAGE: 'Reach out to us at: '
           TXT_ERROR_CONTACT_URL: '{{ github.server_url }}/{{ github.repository }}'
@@ -71,7 +71,7 @@ jobs:
           REGIONS_LABELS: >-
             Example
           REGIONS_SHEET_IDS: >-
-            exampleSpreadSheetId
+            1LQSgTDtKsy4vdLEb8RBsagZ480MNiNJ1gZvgyu7EIB4
           GOOGLE_SHEETS_API_KEY: ${{ secrets.GOOGLE_SHEETS_API_KEY }}
           GOOGLE_SHEETS_API_URL: 'https://sheets.googleapis.com/v4/spreadsheets'
 
