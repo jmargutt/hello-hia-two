@@ -1,4 +1,4 @@
-# Helpful Information App: `<insert-instance-name>`
+# Helpful Information App: TEST 2
 
 This repository contains deployment details of a [Helpful Information App](https://github.com/rodekruis/helpful-information)-instance.
 
